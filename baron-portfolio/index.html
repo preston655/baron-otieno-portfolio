@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Baron Otieno, a Water Resources and Environmental professional and operations specialist based in Kenya.">
+  <meta name="theme-color" content="#061a1a">
+  <title>Baron Otieno | Water, Environment & Operations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  <canvas id="waterCanvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient ambient-one" data-parallax="-0.06" aria-hidden="true"></div>
+  <div class="ambient ambient-two" data-parallax="0.04" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Baron Otieno, home">
+        <span class="brand-mark" aria-hidden="true"><span>BO</span></span>
+        <span class="brand-copy"><strong>Baron Otieno</strong><small>Water · Earth · Operations</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation menu">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#profile">Profile</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#impact">Impact</a>
+        <a href="#education">Education</a>
+        <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="topography topo-one" aria-hidden="true">
+        <svg viewBox="0 0 800 800" role="img">
+          <g fill="none" stroke="currentColor" stroke-width="1">
+            <path d="M72 590C124 489 80 377 180 303c106-78 198 2 276-96 75-94 172-86 266-29"/>
+            <path d="M38 629c66-122 31-251 132-329 119-92 217-6 300-110 78-97 171-98 287-39"/>
+            <path d="M9 674c76-152 12-276 137-379 123-101 241-14 329-125C558 65 661 61 791 122"/>
+            <path d="M105 552c41-82 8-176 91-236 91-66 161 10 236-82 69-84 152-68 230-21"/>
+            <path d="M151 515c20-60 0-131 64-174 68-46 127 12 190-66 54-67 116-45 185-9"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="hero-grid shell">
+        <div class="hero-copy">
+          <div class="eyebrow reveal" data-delay="0">
+            <span class="live-dot"></span>
+            Kenya based · Open to fieldwork & travel
+          </div>
+          <h1 id="hero-title" class="reveal" data-delay="80">
+            <span class="name-line">Baron Otieno</span>
+            <span class="statement">Where <em>water insight</em><br>meets operational grit.</span>
+          </h1>
+          <p class="hero-intro reveal" data-delay="160">Water resources and environmental professional with hands-on experience across hydrology, groundwater monitoring, water quality, field data and industrial operations.</p>
+          <div class="hero-actions reveal" data-delay="230">
+            <a class="button button-primary magnetic" href="#experience"><span>Explore experience</span><b aria-hidden="true">↓</b></a>
+            <a class="button button-quiet magnetic" href="mailto:baronotienooluoch@gmail.com"><span>Start a conversation</span><b aria-hidden="true">↗</b></a>
+          </div>
+          <div class="hero-proof reveal" data-delay="300" aria-label="Career highlights">
+            <div><strong>15+</strong><span>Technical reports</span></div>
+            <div><strong>1,000+</strong><span>Validated field records</span></div>
+            <div><strong>40%</strong><span>Fewer unplanned stoppages</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="180" id="heroVisual">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="water-drop" aria-hidden="true">
+            <div class="drop-sheen"></div>
+            <div class="drop-core">
+              <svg viewBox="0 0 100 100">
+                <path d="M50 10C40 27 24 43 24 61a26 26 0 0 0 52 0C76 43 60 27 50 10Z" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M35 63c1 8 7 14 15 16" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="impact-card glass-card">
+            <div class="card-label"><span>Operational continuity</span><i></i></div>
+            <strong>100<span>%</span></strong>
+            <p>Raw Mill uptime through proactive monitoring and corrective action.</p>
+            <div class="signal" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="micro-card micro-card-a glass-card"><span>01</span><b>Hydrology</b><small>Field intelligence</small></div>
+          <div class="micro-card micro-card-b glass-card"><span>02</span><b>Operations</b><small>Reliable systems</small></div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#profile" aria-label="Scroll to profile"><span>Scroll to discover</span><i></i></a>
+    </section>
+
+    <section class="section profile-section" id="profile" aria-labelledby="profile-title">
+      <div class="section-marker" aria-hidden="true"><span>01</span><i></i><small>PROFILE</small></div>
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="kicker">Professional profile</p>
+          <h2 id="profile-title">Grounded in evidence.<br><em>Built for the field.</em></h2>
+        </div>
+        <div class="profile-grid">
+          <div class="profile-story reveal">
+            <p class="lead">A multidisciplinary professional turning field observations into dependable decisions, from water-resource assessments to continuous industrial production.</p>
+            <p>Baron holds a BSc in Earth Science with Information Technology and brings practical experience in hydrology, water quality assessment, groundwater monitoring, environmental compliance, data validation and operations. Across government, research and industry, his work is defined by rigorous documentation, calm troubleshooting and accountable execution.</p>
+            <div class="profile-signoff">
+              <span class="line"></span>
+              <div><strong>Professional focus</strong><small>Water · Environment · Field Operations</small></div>
+            </div>
+          </div>
+          <div class="principles reveal" data-delay="120">
+            <article class="principle-card tilt-card">
+              <span class="principle-number">01</span>
+              <div class="icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M16 3S7 13 7 20a9 9 0 0 0 18 0C25 13 16 3 16 3Z"/><path d="M11 21c.5 3 2.5 5 5 6"/></svg>
+              </div>
+              <h3>Water intelligence</h3>
+              <p>Hydrology, water quality, groundwater monitoring and riparian mapping.</p>
+            </article>
+            <article class="principle-card tilt-card">
+              <span class="principle-number">02</span>
+              <div class="icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><path d="m16 9 2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z"/></svg>
+              </div>
+              <h3>Field discipline</h3>
+              <p>Accurate collection, validation and reporting under standardised protocols.</p>
+            </article>
+            <article class="principle-card tilt-card">
+              <span class="principle-number">03</span>
+              <div class="icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M5 24 11 8l5 12 5-8 6 12H5Z"/><path d="M8 24h16"/></svg>
+              </div>
+              <h3>Operational resilience</h3>
+              <p>Proactive monitoring, first-line interventions and cross-team coordination.</p>
+            </article>
+            <article class="principle-card tilt-card">
+              <span class="principle-number">04</span>
+              <div class="icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M8 4h12l5 5v19H8V4Z"/><path d="M20 4v6h5M12 16h9M12 21h9M12 11h3"/></svg>
+              </div>
+              <h3>Clear documentation</h3>
+              <p>Technical reports, shift logs and compliance records that stand up to scrutiny.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="section-marker" aria-hidden="true"><span>02</span><i></i><small>CAPABILITY</small></div>
+      <div class="shell">
+        <div class="section-heading heading-row reveal">
+          <div>
+            <p class="kicker">Core capabilities</p>
+            <h2 id="skills-title">Technical depth.<br><em>Practical range.</em></h2>
+          </div>
+          <p class="heading-note">A field-to-report toolkit shaped by water-resource work, donor research and high-tempo industrial operations.</p>
+        </div>
+
+        <div class="skills-board reveal" data-delay="100">
+          <div class="skills-column">
+            <div class="skill" style="--level: 92%">
+              <div class="skill-top"><span><b>01</b>Hydrology & groundwater monitoring</span><em>Applied</em></div>
+              <div class="meter"><i></i><u></u></div>
+            </div>
+            <div class="skill" style="--level: 88%">
+              <div class="skill-top"><span><b>02</b>Water quality assessment</span><em>Applied</em></div>
+              <div class="meter"><i></i><u></u></div>
+            </div>
+            <div class="skill" style="--level: 76%">
+              <div class="skill-top"><span><b>03</b>EIA support</span><em>Support</em></div>
+              <div class="meter"><i></i><u></u></div>
+            </div>
+            <div class="skill" style="--level: 94%">
+              <div class="skill-top"><span><b>04</b>Technical reporting</span><em>Core</em></div>
+              <div class="meter"><i></i><u></u></div>
+            </div>
+          </div>
+          <div class="skills-column">
+            <div class="skill" style="--level: 96%">
+              <div class="skill-top"><span><b>05</b>Field data collection</span><em>Core</em></div>
+              <div class="meter"><i></i><u></u></div>
+            </div>
+            <div class="skill" style="--level: 87%">
+              <div class="skill-top"><span><b>06</b>Regulatory compliance</span><em>Applied</em></div>
+              <div class="meter"><i></i><u></u></div>
+            </div>
+            <div class="skill" style="--level: 68%">
+              <div class="skill-top"><span><b>07</b>GIS</span><em>Exposure</em></div>
+              <div class="meter"><i></i><u></u></div>
+            </div>
+            <div class="skill" style="--level: 90%">
+              <div class="skill-top"><span><b>08</b>Microsoft Office</span><em>Proficient</em></div>
+              <div class="meter"><i></i><u></u></div>
+            </div>
+          </div>
+        </div>
+        <div class="tool-ribbon reveal" data-delay="160" aria-label="Additional skills">
+          <span>Water resource management</span><i></i><span>Project coordination</span><i></i><span>Stakeholder engagement</span><i></i><span>Data analysis tools</span><i></i><span>Census Survey Pro</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="section-marker" aria-hidden="true"><span>03</span><i></i><small>EXPERIENCE</small></div>
+      <div class="shell">
+        <div class="section-heading heading-row reveal">
+          <div>
+            <p class="kicker">Career timeline</p>
+            <h2 id="experience-title">Experience that<br><em>travels across systems.</em></h2>
+          </div>
+          <p class="heading-note">Select a milestone to open the field notes, responsibilities and measurable outcomes.</p>
+        </div>
+
+        <div class="timeline reveal" data-delay="100">
+          <div class="timeline-rail" aria-hidden="true"><span></span></div>
+
+          <article class="timeline-item is-open">
+            <button class="timeline-trigger" aria-expanded="true" aria-controls="role-1">
+              <span class="timeline-dot"></span>
+              <span class="timeline-date">SEP 2020 TO PRESENT</span>
+              <span class="timeline-title"><strong>Production Technician</strong><small>Mombasa Cement Limited</small></span>
+              <span class="timeline-toggle"><i></i><b></b></span>
+            </button>
+            <div class="timeline-panel" id="role-1">
+              <div class="timeline-panel-inner">
+                <p>Executing daily production and field activities with proactive process monitoring, clear documentation and first-line technical interventions.</p>
+                <ul>
+                  <li><strong>100% Raw Mill uptime</strong> through proactive monitoring and corrective action.</li>
+                  <li><strong>40% reduction</strong> in unplanned stoppages through timely troubleshooting and team coordination.</li>
+                  <li>Maintains detailed shift logs, production reports and compliance documentation aligned with safety and audit requirements.</li>
+                  <li>Coordinates with maintenance and engineering teams, while supporting onboarding and HSE culture.</li>
+                </ul>
+                <div class="role-tags"><span>Production operations</span><span>Preventive maintenance</span><span>HSE</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <button class="timeline-trigger" aria-expanded="false" aria-controls="role-2">
+              <span class="timeline-dot"></span>
+              <span class="timeline-date">JAN TO MAR 2020</span>
+              <span class="timeline-title"><strong>Administrative Intern</strong><small>National Hospital Insurance Fund · Mtwapa</small></span>
+              <span class="timeline-toggle"><i></i><b></b></span>
+            </button>
+            <div class="timeline-panel" id="role-2">
+              <div class="timeline-panel-inner">
+                <p>Supported client-facing and administrative operations under strict service and compliance standards.</p>
+                <ul>
+                  <li>Digitised more than <strong>500 client records</strong>, reducing claims turnaround time by <strong>70%</strong>.</li>
+                  <li>Resolved <strong>90% of enquiries</strong> at first contact through focused front-desk support.</li>
+                  <li>Helped streamline daily workflow, reduce data-entry errors and cut backlog by 50%.</li>
+                </ul>
+                <div class="role-tags"><span>Records digitisation</span><span>Client service</span><span>Compliance</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <button class="timeline-trigger" aria-expanded="false" aria-controls="role-3">
+              <span class="timeline-dot"></span>
+              <span class="timeline-date">JUL 2018 TO MAR 2019</span>
+              <span class="timeline-title"><strong>Field Research Assistant</strong><small>RTI International · Tusome Baseline Study</small></span>
+              <span class="timeline-toggle"><i></i><b></b></span>
+            </button>
+            <div class="timeline-panel" id="role-3">
+              <div class="timeline-panel-inner">
+                <p>Planned and executed donor-funded field research under standardised protocols across two counties.</p>
+                <ul>
+                  <li>Collected, cleaned and validated <strong>1,000+ school-based records</strong>.</li>
+                  <li>Reduced data-entry error rates by <strong>98%</strong> through Census Survey Pro validation.</li>
+                  <li>Coordinated activities with 20+ schools, education officials and project stakeholders.</li>
+                  <li>Prepared daily progress and structured technical reports to inform programme decisions.</li>
+                </ul>
+                <div class="role-tags"><span>Field research</span><span>Data validation</span><span>Stakeholder coordination</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <button class="timeline-trigger" aria-expanded="false" aria-controls="role-4">
+              <span class="timeline-dot"></span>
+              <span class="timeline-date">JAN 2015 TO JUN 2016</span>
+              <span class="timeline-title"><strong>Administrative Intern | Water & Environment</strong><small>Water Resources Authority</small></span>
+              <span class="timeline-toggle"><i></i><b></b></span>
+            </button>
+            <div class="timeline-panel" id="role-4">
+              <div class="timeline-panel-inner">
+                <p>Conducted field assessments and technical reporting supporting sustainable water-resource management and regulatory enforcement.</p>
+                <ul>
+                  <li>Prepared <strong>15+ hydrological and environmental reports</strong>.</li>
+                  <li>Monitored <strong>10+ gauging stations</strong> and supported billing with accurate water-use data.</li>
+                  <li>Participated in water-quality testing and groundwater analysis.</li>
+                  <li>Mapped <strong>5+ riparian zones</strong> to support compliance and planning.</li>
+                </ul>
+                <div class="role-tags"><span>Hydrology</span><span>Water quality</span><span>Riparian mapping</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <button class="timeline-trigger" aria-expanded="false" aria-controls="role-5">
+              <span class="timeline-dot"></span>
+              <span class="timeline-date">JAN TO MAY 2013</span>
+              <span class="timeline-title"><strong>Logistics Coordinator</strong><small>Platinum Outsourcing & Logistics · BAT Project, Meru</small></span>
+              <span class="timeline-toggle"><i></i><b></b></span>
+            </button>
+            <div class="timeline-panel" id="role-5">
+              <div class="timeline-panel-inner">
+                <p>Coordinated a regulated agricultural supply chain connecting growers, transporters and project teams.</p>
+                <ul>
+                  <li>Oversaw logistics for <strong>50+ transporters</strong> and payment coordination for hired vehicles.</li>
+                  <li>Built partnerships with <strong>80+ farmers</strong>, achieving 95% compliance with BAT quality standards.</li>
+                  <li>Maintained 100% adherence to transport safety and regulatory standards.</li>
+                </ul>
+                <div class="role-tags"><span>Supply chain</span><span>Quality standards</span><span>Transport safety</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <button class="timeline-trigger" aria-expanded="false" aria-controls="role-6">
+              <span class="timeline-dot"></span>
+              <span class="timeline-date">DEC 2011 TO APR 2012</span>
+              <span class="timeline-title"><strong>Lead Data Clerk</strong><small>Platinum Outsourcing & Logistics · BAT Project, Migori</small></span>
+              <span class="timeline-toggle"><i></i><b></b></span>
+            </button>
+            <div class="timeline-panel" id="role-6">
+              <div class="timeline-panel-inner">
+                <p>Provided back-end administrative support for logistics documentation, filing and analysis.</p>
+                <ul>
+                  <li>Validated <strong>2,000+ data entries</strong> with a 100% accuracy rate.</li>
+                  <li>Improved document access time by <strong>50%</strong> through streamlined filing and retrieval.</li>
+                  <li>Identified and corrected critical data errors, preventing report rejections.</li>
+                </ul>
+                <div class="role-tags"><span>Data quality</span><span>Records management</span><span>Logistics support</span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section impact-section" id="impact" aria-labelledby="impact-title">
+      <div class="impact-waterline" aria-hidden="true">
+        <svg viewBox="0 0 1440 190" preserveAspectRatio="none"><path d="M0 91c152 56 276-64 430-15s283 51 429 2c170-57 306 49 581 2v110H0V91Z"/><path d="M0 109c154-36 285 25 442 4 173-23 287-71 463-24 179 48 335 1 535-24"/></svg>
+      </div>
+      <div class="section-marker" aria-hidden="true"><span>04</span><i></i><small>IMPACT</small></div>
+      <div class="shell">
+        <div class="section-heading heading-row reveal">
+          <div>
+            <p class="kicker">Measured outcomes</p>
+            <h2 id="impact-title">Evidence of<br><em>work that moves.</em></h2>
+          </div>
+          <p class="heading-note">Numbers drawn from work across water-resource regulation, research, healthcare administration and industry.</p>
+        </div>
+
+        <div class="impact-dashboard reveal" data-delay="100">
+          <article class="stat-card stat-featured">
+            <div class="stat-head"><span>REPORTING</span><i class="pulse-dot"></i></div>
+            <strong class="counter" data-target="15" data-suffix="+">0</strong>
+            <p>Technical & environmental reports</p>
+            <div class="mini-chart chart-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-head"><span>DATA QUALITY</span><i>↑</i></div>
+            <strong class="counter" data-target="1000" data-suffix="+">0</strong>
+            <p>Validated field records</p>
+            <svg class="mini-chart sparkline" viewBox="0 0 200 45" preserveAspectRatio="none" aria-hidden="true"><path d="M0 39 23 34 42 36 66 22 87 27 107 15 132 20 155 7 176 12 200 2"/><path class="area" d="M0 39 23 34 42 36 66 22 87 27 107 15 132 20 155 7 176 12 200 2V45H0Z"/></svg>
+          </article>
+          <article class="stat-card">
+            <div class="stat-head"><span>RIPARIAN WORK</span><i>⌁</i></div>
+            <strong class="counter" data-target="5">0</strong>
+            <p>Riparian zones mapped</p>
+            <div class="mini-chart contour" aria-hidden="true"><span></span><span></span><span></span></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-head"><span>MONITORING</span><i class="pulse-dot"></i></div>
+            <strong class="counter" data-target="10" data-suffix="+">0</strong>
+            <p>Gauging stations monitored</p>
+            <div class="gauge" aria-hidden="true"><i></i><span></span></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-head"><span>DIGITISATION</span><i>↗</i></div>
+            <strong class="counter" data-target="500" data-suffix="+">0</strong>
+            <p>Client records digitised</p>
+            <div class="record-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="stat-card stat-accent">
+            <div class="stat-head"><span>EFFICIENCY</span><i>−</i></div>
+            <strong class="counter" data-target="70" data-suffix="%">0</strong>
+            <p>Claims turnaround reduction</p>
+            <div class="ring-meter" aria-hidden="true"><span>70</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education" aria-labelledby="education-title">
+      <div class="section-marker" aria-hidden="true"><span>05</span><i></i><small>FOUNDATION</small></div>
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="kicker">Education & readiness</p>
+          <h2 id="education-title">Earth science foundation.<br><em>Business mindset.</em></h2>
+        </div>
+        <div class="education-grid">
+          <div class="qualification-list reveal">
+            <article class="qualification-card tilt-card">
+              <span class="qual-index">01</span>
+              <div class="qual-icon" aria-hidden="true">⌖</div>
+              <div><p>Bachelor of Science</p><h3>Earth Science with Information Technology</h3><span>Maseno University · Kenya</span></div>
+              <i class="qual-line"></i>
+            </article>
+            <article class="qualification-card tilt-card">
+              <span class="qual-index">02</span>
+              <div class="qual-icon" aria-hidden="true">◇</div>
+              <div><p>Diploma</p><h3>Business Management</h3><span>Kenya Institute of Management · Mombasa</span></div>
+              <i class="qual-line"></i>
+            </article>
+          </div>
+          <aside class="readiness-card reveal" data-delay="120">
+            <div class="readiness-top"><span>FIELD READINESS</span><i class="live-dot"></i></div>
+            <h3>Ready to contribute,<br>where the work is.</h3>
+            <dl>
+              <div><dt>Base</dt><dd>Kenya</dd></div>
+              <div><dt>Languages</dt><dd>English · Fluent<br>Kiswahili · Fluent</dd></div>
+              <div><dt>Mobility</dt><dd>Open to extensive fieldwork & travel</dd></div>
+              <div><dt>Attributes</dt><dd>Results-driven · Adaptable · Self-starter</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-topo" aria-hidden="true"></div>
+      <div class="shell contact-grid">
+        <div class="contact-copy reveal">
+          <p class="kicker">Start a conversation</p>
+          <h2 id="contact-title">Put the right person<br><em>where impact begins.</em></h2>
+          <p>For opportunities in water resources, environmental fieldwork, technical operations or programme delivery, Baron is ready to talk.</p>
+        </div>
+        <div class="contact-actions reveal" data-delay="120">
+          <a class="contact-link magnetic" href="mailto:baronotienooluoch@gmail.com">
+            <span class="contact-label">EMAIL</span>
+            <strong>baronotienooluoch@gmail.com</strong>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="contact-link magnetic" href="tel:+254712608268">
+            <span class="contact-label">CALL</span>
+            <strong>+254 712 608 268</strong>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <div class="availability-chip"><span class="live-dot"></span> Available for opportunities in Kenya & field-based roles</div>
+        </div>
+      </div>
+      <footer class="footer shell">
+        <a class="brand footer-brand" href="#home" aria-label="Back to top"><span class="brand-mark"><span>BO</span></span><span class="brand-copy"><strong>Baron Otieno</strong><small>Water · Earth · Operations</small></span></a>
+        <p>© <span id="year"></span> Baron Otieno. Built for meaningful work.</p>
+        <a class="back-top" href="#home">Back to surface <span>↑</span></a>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
